@@ -68,7 +68,8 @@ func main() {
 	var dataSlice = [10,1000,5000]
   for  _,v := range dataSlice{
     for key,value := range dataMap{
-      write(key,value,generateValue(v))
+	    tmpStr := value + "_"+v
+      write(key,value,generateValue(tmpStr))
     }
   }
 
